@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon FBA Coaching — KD | Free Training</title>
+  <meta name="description" content="Watch the free training. Discover the 5-Phase Amazon Operator System that gets complete beginners to their first profitable product in 90 days." />
+  <!-- Prevent indexing (VSL pages should not be indexed — keep traffic controlled) -->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0a0a;
+      --white: #ffffff;
+      --gray: #f5f5f5;
+      --mid-gray: #888888;
+      --accent: #FF6B00;
+      --text: #1a1a1a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* ──────────────────────────────────────────
+       TOP BAR
+    ────────────────────────────────────────── */
+    .top-bar {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    /* ──────────────────────────────────────────
+       HEADLINE SECTION
+    ────────────────────────────────────────── */
+    .headline-section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 24px 32px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--black);
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .subheadline {
+      font-size: clamp(16px, 2.5vw, 20px);
+      color: #444;
+      font-weight: 400;
+      max-width: 640px;
+      margin: 0 auto 8px;
+      line-height: 1.5;
+    }
+
+    /* ──────────────────────────────────────────
+       VSL SECTION
+    ────────────────────────────────────────── */
+    .vsl-section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px 16px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 */
+      background: var(--black);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+    }
+
+    .video-wrapper iframe,
+    .video-wrapper video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+
+    /* Placeholder while Wistia embed is added */
+    .video-placeholder {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      gap: 16px;
+    }
+
+    .video-placeholder .play-icon {
+      width: 72px;
+      height: 72px;
+      background: rgba(255,107,0,0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .video-placeholder .play-icon svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+      margin-left: 4px;
+    }
+
+    .video-placeholder p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      max-width: 300px;
+    }
+
+    .video-note {
+      text-align: center;
+      font-size: 13px;
+      color: var(--mid-gray);
+      margin-top: 12px;
+      padding: 0 24px;
+    }
+
+    /* ──────────────────────────────────────────
+       APPLICATION SECTION
+    ────────────────────────────────────────── */
+    .application-section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .apply-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .apply-header h2 {
+      font-size: clamp(22px, 3.5vw, 34px);
+      font-weight: 700;
+      color: var(--black);
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+
+    .apply-header p {
+      font-size: 16px;
+      color: #555;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    /* Typeform embed container */
+    .typeform-wrapper {
+      width: 100%;
+      min-height: 540px;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Placeholder until Typeform is embedded */
+    .form-placeholder {
+      width: 100%;
+      min-height: 540px;
+      background: var(--gray);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      border: 2px dashed #ddd;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .form-placeholder h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--black);
+    }
+
+    .form-placeholder p {
+      font-size: 15px;
+      color: #666;
+      max-width: 400px;
+    }
+
+    .form-placeholder .embed-note {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 6px;
+      padding: 16px 20px;
+      font-size: 13px;
+      color: #888;
+      font-family: monospace;
+      max-width: 480px;
+    }
+
+    /* ──────────────────────────────────────────
+       FOOTER
+    ────────────────────────────────────────── */
+    footer {
+      background: var(--gray);
+      border-top: 1px solid #eee;
+      padding: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--mid-gray);
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: var(--mid-gray);
+      text-decoration: underline;
+    }
+
+    /* ──────────────────────────────────────────
+       MOBILE
+    ────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      .headline-section { padding: 32px 16px 20px; }
+      .vsl-section { padding: 0 16px 12px; }
+      .application-section { padding: 28px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    🔴 Free Training — Watch Before Applying
+  </div>
+
+  <!-- Headline -->
+  <section class="headline-section">
+    <p class="eyebrow">Amazon FBA Coaching with KD</p>
+    <h1>The <em>5-Phase System</em> That Gets Complete Beginners to Their First Profitable Amazon Product in 90 Days</h1>
+    <p class="subheadline">Watch the free training. Then apply for a free strategy call and I'll show you exactly how this applies to your situation.</p>
+  </section>
+
+  <!-- VSL -->
+  <section class="vsl-section">
+    <div class="video-wrapper">
+      <!--
+        ════════════════════════════════════════════════════════
+        WISTIA EMBED — REPLACE THIS COMMENT WITH YOUR WISTIA
+        EMBED CODE WHEN THE VIDEO IS READY.
+
+        Example Wistia embed:
+        <script src="https://fast.wistia.com/embed/medias/YOUR_VIDEO_ID.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+          <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+            <div class="wistia_embed wistia_async_YOUR_VIDEO_ID seo=false videoFoam=true" style="height:100%;position:relative;width:100%">
+            </div>
+          </div>
+        </div>
+        ════════════════════════════════════════════════════════
+      -->
+      <div class="video-placeholder">
+        <div class="play-icon">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <p>Video coming soon — embed your Wistia video here</p>
+      </div>
+    </div>
+    <p class="video-note">🔒 This training is private. Don't share this link.</p>
+  </section>
+
+  <!-- Application -->
+  <section class="application-section">
+    <div class="apply-header">
+      <h2>Apply for a Free Strategy Call</h2>
+      <p>Takes 3 minutes. I'll review your application personally and reach out to schedule your call if you're a fit.</p>
+    </div>
+
+    <!--
+      ════════════════════════════════════════════════════════
+      TYPEFORM EMBED — REPLACE THE PLACEHOLDER BELOW WITH YOUR
+      ACTUAL TYPEFORM EMBED CODE.
+
+      Typeform embed example:
+      <div data-tf-live="YOUR_TYPEFORM_ID"></div>
+      <script src="//embed.typeform.com/next/embed.js"></script>
+
+      Or use the iframe embed:
+      <iframe
+        src="https://yourname.typeform.com/to/FORMID"
+        style="width:100%; height:540px; border:none;"
+        allow="camera; microphone; autoplay; encrypted-media;"
+      ></iframe>
+      ════════════════════════════════════════════════════════
+    -->
+    <div class="form-placeholder">
+      <h3>Application Form</h3>
+      <p>Embed your Typeform application here. Connect Typeform to Calendly for qualified applicants to book directly.</p>
+      <div class="embed-note">
+        → Replace this block with your Typeform embed code<br/>
+        → Qualified applicants → Calendly booking<br/>
+        → Disqualified applicants → drop-sell.html<br/>
+        → Only pixel the Calendly confirmation page
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 KD | All rights reserved.</p>
+    <p style="margin-top: 6px;">
+      <a href="#">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="#">Terms of Service</a> &nbsp;·&nbsp;
+      <a href="#">Disclaimer</a>
+    </p>
+    <p style="margin-top: 10px; max-width: 600px; margin-left: auto; margin-right: auto;">
+      Results mentioned on this page are not typical. Individual results will vary based on experience, effort, market conditions, and other factors.
+      Amazon FBA involves real financial risk. This program is educational in nature and does not guarantee any specific income or outcome.
+    </p>
+  </footer>
+
+</body>
+</html>

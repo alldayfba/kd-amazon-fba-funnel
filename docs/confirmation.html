@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You're Booked — KD Amazon FBA Coaching</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!--
+    ════════════════════════════════════════════════════════════
+    PIXEL PLACEMENT: Place your Meta Pixel "Lead" event here.
+    This is the ONLY page that should be pixeled.
+    The drop-sell page must NEVER have this pixel.
+
+    Example Meta Pixel code:
+    <script>
+      fbq('track', 'Lead');
+    </script>
+    ════════════════════════════════════════════════════════════
+  -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0a0a;
+      --white: #ffffff;
+      --gray: #f5f5f5;
+      --mid-gray: #888888;
+      --accent: #FF6B00;
+      --green: #00a651;
+      --text: #1a1a1a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ──────────────────────────────────────────
+       CONFIRMATION HERO
+    ────────────────────────────────────────── */
+    .confirm-hero {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 60px 24px 48px;
+    }
+
+    .check-badge {
+      width: 72px;
+      height: 72px;
+      background: var(--green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+
+    .check-badge svg {
+      width: 36px;
+      height: 36px;
+      fill: none;
+      stroke: white;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .confirm-hero h1 {
+      font-size: clamp(26px, 4vw, 42px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .confirm-hero p {
+      font-size: clamp(16px, 2vw, 19px);
+      color: rgba(255,255,255,0.75);
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    .call-details-bar {
+      background: var(--accent);
+      color: white;
+      text-align: center;
+      padding: 14px 24px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    /* ──────────────────────────────────────────
+       MAIN VIDEO (Short Confirmation Video)
+    ────────────────────────────────────────── */
+    .main-video-section {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 24px 32px;
+      text-align: center;
+    }
+
+    .main-video-section h2 {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .main-video-section .lead {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 28px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      background: var(--black);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.14);
+    }
+
+    .video-wrapper iframe, .video-wrapper video {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%; border: 0;
+    }
+
+    .video-placeholder {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      color: #fff; gap: 12px;
+    }
+
+    .video-placeholder .play-icon {
+      width: 60px; height: 60px;
+      background: rgba(255,107,0,0.85);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .video-placeholder .play-icon svg {
+      width: 24px; height: 24px; fill: white; margin-left: 3px;
+    }
+
+    .video-placeholder p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.65);
+      text-align: center;
+      max-width: 260px;
+    }
+
+    /* ──────────────────────────────────────────
+       BREAKOUT VIDEOS SECTION
+    ────────────────────────────────────────── */
+    .breakout-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .breakout-section > h2 {
+      font-size: clamp(20px, 3vw, 30px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .breakout-section > .section-sub {
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 40px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .breakout-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .breakout-card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--gray);
+    }
+
+    .breakout-thumb {
+      width: 100%;
+      padding-bottom: 56.25%;
+      background: var(--black);
+      position: relative;
+    }
+
+    .breakout-thumb-placeholder {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.5); gap: 8px;
+      font-size: 13px; text-align: center; padding: 12px;
+    }
+
+    .breakout-thumb-placeholder .mini-play {
+      width: 40px; height: 40px;
+      background: rgba(255,107,0,0.7);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .breakout-thumb-placeholder .mini-play svg {
+      width: 16px; height: 16px; fill: white; margin-left: 2px;
+    }
+
+    .breakout-card-body {
+      padding: 16px 18px;
+    }
+
+    .breakout-card-body h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .breakout-card-body p {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* ──────────────────────────────────────────
+       TESTIMONIALS SECTION
+    ────────────────────────────────────────── */
+    .testimonials-section {
+      background: var(--black);
+      color: var(--white);
+      padding: 56px 24px;
+    }
+
+    .testimonials-section h2 {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .testimonials-section .section-sub {
+      text-align: center;
+      font-size: 15px;
+      color: rgba(255,255,255,0.6);
+      max-width: 480px;
+      margin: 0 auto 40px;
+    }
+
+    .testimonials-grid {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .testimonial-card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .testimonial-text {
+      font-size: 14px;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.6;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+
+    .testimonial-attribution {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .testimonial-avatar {
+      width: 44px;
+      height: 44px;
+      background: #333;
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .testimonial-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .testimonial-detail {
+      font-size: 12px;
+      color: var(--accent);
+      margin-top: 2px;
+    }
+
+    /* ──────────────────────────────────────────
+       TRUST / RESEARCH SECTION
+    ────────────────────────────────────────── */
+    .trust-section {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 24px;
+    }
+
+    .trust-section h2 {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .trust-section .section-sub {
+      text-align: center;
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 36px;
+    }
+
+    .trust-card {
+      background: var(--gray);
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-bottom: 16px;
+    }
+
+    .trust-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .trust-card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* ──────────────────────────────────────────
+       FOOTER
+    ────────────────────────────────────────── */
+    footer {
+      background: var(--gray);
+      border-top: 1px solid #eee;
+      padding: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--mid-gray);
+      line-height: 1.8;
+    }
+
+    footer a { color: var(--mid-gray); text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .confirm-hero { padding: 40px 16px 32px; }
+      .main-video-section { padding: 36px 16px 24px; }
+      .breakout-section { padding: 36px 16px; }
+      .trust-section { padding: 36px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Confirmation Hero -->
+  <section class="confirm-hero">
+    <div class="check-badge">
+      <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h1>You're Booked. Let's Get to Work.</h1>
+    <p>Your strategy call is confirmed. Between now and our call, here's everything you need to make the most of it.</p>
+  </section>
+
+  <!-- Call Details Bar -->
+  <div class="call-details-bar">
+    📅 Your call details are in your email — check your inbox (and spam if needed)
+  </div>
+
+  <!-- Main Confirmation Video -->
+  <section class="main-video-section">
+    <h2>Watch This First — 3 Minutes</h2>
+    <p class="lead">I recorded a quick message for you about what to expect on our call and how to prepare.</p>
+    <div class="video-wrapper">
+      <!--
+        WISTIA EMBED — Short confirmation video (2–4 min)
+        Script: "Hey [Name], congrats on booking. Really looking forward to connecting.
+        Goal of our call: get you full information to make a decision.
+        Below this video: breakout content covering the most common questions.
+        I'll also send emails. No pressure on the call — just clarity."
+        Replace with actual Wistia embed code.
+      -->
+      <div class="video-placeholder">
+        <div class="play-icon">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <p>Confirmation video — embed Wistia here (2–4 min)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breakout Videos -->
+  <section class="breakout-section">
+    <h2>Get Your Questions Answered Now</h2>
+    <p class="section-sub">These short videos cover the questions I hear most before strategy calls. Watch the ones relevant to you before we talk.</p>
+
+    <div class="breakout-grid">
+
+      <div class="breakout-card">
+        <div class="breakout-thumb">
+          <div class="breakout-thumb-placeholder">
+            <div class="mini-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            Breakout Video 1
+          </div>
+        </div>
+        <div class="breakout-card-body">
+          <h3>How much money do I actually need?</h3>
+          <p>I break down exactly how much capital you need for inventory, tools, and PPC — and how to think about the upfront vs. ongoing investment.</p>
+        </div>
+      </div>
+
+      <div class="breakout-card">
+        <div class="breakout-thumb">
+          <div class="breakout-thumb-placeholder">
+            <div class="mini-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            Breakout Video 2
+          </div>
+        </div>
+        <div class="breakout-card-body">
+          <h3>How long until I make my first sale?</h3>
+          <p>Realistic timeline breakdown — from product selection to first sale. I walk through the fastest path without cutting corners that cost you later.</p>
+        </div>
+      </div>
+
+      <div class="breakout-card">
+        <div class="breakout-thumb">
+          <div class="breakout-thumb-placeholder">
+            <div class="mini-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            Breakout Video 3
+          </div>
+        </div>
+        <div class="breakout-card-body">
+          <h3>What if I pick the wrong product?</h3>
+          <p>How the research filter system works to de-risk product selection — and what happens if a product underperforms despite doing everything right.</p>
+        </div>
+      </div>
+
+      <div class="breakout-card">
+        <div class="breakout-thumb">
+          <div class="breakout-thumb-placeholder">
+            <div class="mini-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            Breakout Video 4
+          </div>
+        </div>
+        <div class="breakout-card-body">
+          <h3>What does coaching actually look like week by week?</h3>
+          <p>I walk through a real student's 12-week journey — what we worked on each week, when things got hard, and how we resolved it.</p>
+        </div>
+      </div>
+
+      <div class="breakout-card">
+        <div class="breakout-thumb">
+          <div class="breakout-thumb-placeholder">
+            <div class="mini-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            Breakout Video 5
+          </div>
+        </div>
+        <div class="breakout-card-body">
+          <h3>Is Amazon FBA still a real opportunity in 2026?</h3>
+          <p>I address the "is it too saturated" question directly — with real data on what's working and what categories still have open opportunity.</p>
+        </div>
+      </div>
+
+      <div class="breakout-card">
+        <div class="breakout-thumb">
+          <div class="breakout-thumb-placeholder">
+            <div class="mini-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            Breakout Video 6
+          </div>
+        </div>
+        <div class="breakout-card-body">
+          <h3>What if it doesn't work for me?</h3>
+          <p>How the guarantee works, what "doesn't work" actually means in practice, and what my commitment to your outcome looks like beyond 90 days.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section">
+    <h2>What Students Say</h2>
+    <p class="section-sub">Real people. Real results. Feel free to look them up.</p>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "I'd watched probably 50 hours of YouTube before working with KD and still felt like I had no idea what I was doing. In the first two weeks of coaching we picked a product I genuinely believe in. Now I'm three months in and making real money."
+        </p>
+        <div class="testimonial-attribution">
+          <div class="testimonial-avatar">J</div>
+          <div>
+            <div class="testimonial-name">[Student Name] — [City]</div>
+            <div class="testimonial-detail">$[X]/month → Month 3</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "I tried Amazon on my own before and lost $2,000 on a product that never ranked. KD audited exactly what happened, we built a plan, and my second launch was profitable from month one."
+        </p>
+        <div class="testimonial-attribution">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-name">[Student Name] — [City]</div>
+            <div class="testimonial-detail">First profitable launch after prior failure</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "I work a full-time job and was worried I wouldn't have time. KD was honest that it's 5–10 hours a week upfront. That was manageable. Now I'm 4 months in and my Amazon business runs in the background while I'm at work."
+        </p>
+        <div class="testimonial-attribution">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <div class="testimonial-name">[Student Name] — [City]</div>
+            <div class="testimonial-detail">Built Amazon store alongside full-time job</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Trust / Research Section -->
+  <section class="trust-section">
+    <h2>Before Our Call — Do Your Research</h2>
+    <p class="section-sub">Smart people investigate before committing. Here's what to look for and what I'd tell you about it.</p>
+
+    <div class="trust-card">
+      <h3>What to search</h3>
+      <p>Search "[KD's name] Amazon FBA coach reviews" — you'll find social media, testimonials, and content. Look at the substance of what you find, not just the volume. I'm active on [Instagram / YouTube] and you can see the kind of operator I am from what I post.</p>
+    </div>
+
+    <div class="trust-card">
+      <h3>On refunds and complaints</h3>
+      <p>If you find negative feedback, read it carefully. Does it describe someone who showed up and did the work, or someone who didn't follow through and is blaming the program? Those are very different stories. I stand behind students who execute. I can't guarantee results for students who don't.</p>
+    </div>
+
+    <div class="trust-card">
+      <h3>Talk to a real student</h3>
+      <p>On our call, I'm happy to connect you with a past or current student who can talk to you directly. If you want that before the call, reply to any email I've sent you and ask. I'll make it happen.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 KD | All rights reserved.</p>
+    <p style="margin-top: 6px;">
+      <a href="#">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="#">Terms of Service</a> &nbsp;·&nbsp;
+      <a href="#">Disclaimer</a>
+    </p>
+    <p style="margin-top: 10px; max-width: 600px; margin-left: auto; margin-right: auto;">
+      Results mentioned are not typical. Individual results will vary.
+    </p>
+  </footer>
+
+</body>
+</html>
